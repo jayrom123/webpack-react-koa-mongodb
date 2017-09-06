@@ -88,23 +88,23 @@ module.exports = {
   devtool:"soure-map",
   plugins:[
     // new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('../css/[name].min.css'),
+    new ExtractTextPlugin('[name].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'vendor-[hash].js',
+      filename: '/static/vendor-[hash].js',
     }),
     new HtmlWebpackPlugin({
       template:  path.join( __dir ,"/src/index.html")
       //template: 'index.html'
     }),
-    new UglifyJSPlugin({
-      compress: {
-        warnings: true
-      },
-      output: {
-        comments: false
-      }
-    }),
+    // new UglifyJSPlugin({
+    //   compress: {
+    //     warnings: true
+    //   },
+    //   output: {
+    //     comments: false
+    //   }
+    // }),
     // 拷贝文件夹到相应目录
     new CopyWebpackPlugin([
       {from: __dir + '/src/static/*', to: __dir + '/dist/src/static'}

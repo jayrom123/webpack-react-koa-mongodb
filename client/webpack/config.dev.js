@@ -11,15 +11,15 @@ const path = require('path');
 const __dir = path.resolve(__dirname,"..");
 
 module.exports = {
+  context:path.resolve(__dir,".."),
   entry:{
     vendor: ["jquery"],
-    build:"./app.jsx",
+    build:"./client/src/app.jsx",
   },
   output:{
     filename:"[name].js",
-    path:path.resolve(__dirname, "dist"),
+    path:path.resolve(__dir, "./dist"),
   },
-  context:path.resolve(__dirname,"../src"),
   module:{
     rules:[
       {
@@ -82,7 +82,7 @@ module.exports = {
   },
   resolve:{
     alias:{
-      "__src":path.resolve(__dirname,"../src/")
+      "__src":path.resolve(__dir,"./src/")
     }
   },
   devtool:"source-map",
