@@ -1,17 +1,7 @@
 
+# webpack-react-koa-mongodb
 
+### 特性
 
-1 创建目录结构
-
-2 添加 .gitignore 文件
-    git版本控制忽略文件
-
-3 配置webpack
-    1 注意点： output.path = path.resolve(__dirname,"dist");   //注意path的语法
-    2 path:path.resolve(__dir, "./dist")                      //公共输出路径
-    3 CommonsChunkPlugin filename =  '/static/vendor-[hash].js';   提取到static/目录下
-
-
-
-4
-
+- 技术栈  webpack 3.0+ ， ES6+ , react 15+ , ract-router 4.0+ , node 8+ , koa 3 ,mongodb
+-
