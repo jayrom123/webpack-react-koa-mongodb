@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "c": "webpack-dev-server --progress --watch --config  ./client/webpack/config.dev.js",
-    "b": "webpack --colors  --progress --watch -p --config ./client/webpack/config.build.js",
+    "dev": "webpack-dev-server --progress --watch --config  ./client/webpack/config.dev.js",
+    "build": "webpack --colors  --progress --watch -p --config ./client/webpack/config.build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
