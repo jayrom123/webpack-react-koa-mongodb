@@ -2,24 +2,18 @@
  * Created by Administrator on 2017/9/30.
  */
 
-import {formJS} from "immutable";
-import {INIT_STATE, LOADING} from '../constants/test';
+import immutable,{fromJS} from "immutable";
+import {VISIBLE} from '../constants/test';
 
 const init = {
-  loading: true,
-  data:[]
+  visible: false
 };
 
-
-const Test = (state = init, action) => {
+export const Test = (state = init, action) => {
   switch (action.type) {
-    case INIT_STATE:
-      return init;
-    case LOADING:
-      return fromJS(state).merge({loading: action.loading}).toJS();
+    case VISIBLE:
+      return  fromJS(state).merge({visible: action.visible}).toJS();
     default:
       return state;
   }
 };
-
-export default Test;

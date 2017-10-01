@@ -9,7 +9,7 @@ const init = {
   loading: false,
 };
 
-let Common = (state = init, action) => {
+export const Common = (state = init, action) => {
   switch (action.type) {
     case LOADING:
       return fromJS(state).merge({loading: action.loading}).toJS();
@@ -17,5 +17,3 @@ let Common = (state = init, action) => {
       return state;
   }
 };
-
-export  default Common;
