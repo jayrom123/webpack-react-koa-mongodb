@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"cd client && npm run dev",
-    "build":"cd client && npm run build"
+    "dev": "cd client && npm run dev",
+    "build": "cd client && npm run build"
   },
-  "author": "",
+  "author": "Roger",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {}
