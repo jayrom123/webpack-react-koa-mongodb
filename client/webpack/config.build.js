@@ -11,10 +11,10 @@ let CopyWebpackPlugin = require('copy-webpack-plugin');
 const __dir = path.resolve(__dirname,"..");
 
 module.exports = {
-  context:path.resolve(__dir,".."),
+  context:path.resolve(__dir,"./"),
   entry:{
     vendor: ["jquery"],
-    build:"./client/src/app.jsx",
+    build:"./src/app.jsx",
   },
   output:{
     filename:"[name].js",

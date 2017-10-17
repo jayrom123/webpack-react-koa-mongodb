@@ -11,10 +11,10 @@ const path = require('path');
 const __dir = path.resolve(__dirname,"..");
 
 module.exports = {
-  context:path.resolve(__dir,".."),
+  context:path.resolve(__dir,"./"),
   entry:{
     vendor: ["jquery"],
-    build:"./client/src/app.jsx",
+    build:"./src/app.jsx",
   },
   output:{
     filename:"[name].js",
@@ -110,14 +110,15 @@ module.exports = {
     // ]),
   ],
   devServer: {
-    proxy: { // proxy URLs to backend development server
-      '/api': 'http://localhost:3000'
+    proxy: {          // proxy URLs to backend development server
+      '/api': 'http://localhost:4000'
     },
     port: 3000,
     open: true,
     contentBase: './',
     clientLogLevel: 'none',
     disableHostCheck:true,
+    historyApiFallback:true,   //开发环境浏览器路由
     hot: true,
     compress:false,
     lazy: false

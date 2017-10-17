@@ -1,6 +1,10 @@
-import React, {Component} from "react";
-import {HashRouter, Redirect, Route, Switch} from "react-router-dom";
+/*
+* create by Roger on 2017-09-08
+*
+* */
 
+import React, {Component} from "react";
+import {HashRouter,BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 
 /*
  * pages
@@ -11,7 +15,7 @@ import About from "../pages/About.jsx";
 import Blob from "../pages/Blob.jsx";
 
 let Routers = (
-  <HashRouter >
+  <BrowserRouter >
     <div>
       <Route component={AppWrapper}/>
       <Switch>
@@ -21,7 +25,7 @@ let Routers = (
         <Redirect to="/"/>
       </Switch>
     </div>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 // let Routers =  <div>Roger</div>;
