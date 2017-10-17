@@ -2,7 +2,7 @@
  * Created by Roger on 2017/9/30.
  */
 
-import Test from "../reducers/test";
-import Common from "../reducers/common";
+import {Test} from "./test";
+import {Common} from "./common";
 
 export {Test,Common}
