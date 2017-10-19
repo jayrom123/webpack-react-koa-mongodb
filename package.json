@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "cd client && npm run dev",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "server": "cd server && npm run dev"
   },
   "author": "Roger",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {}
 }
+
+
+
