@@ -14,7 +14,3 @@ route.get('/user', async (ctx, next) => {
 });
 
 module.exports = route;
- 
- 
- 
- 
